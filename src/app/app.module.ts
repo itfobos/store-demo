@@ -8,10 +8,14 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { HttpClientModule } from '@angular/common/http';
+import { GenericStoreModule } from './generic-store/generic-store.module';
+import { WelcomeComponent } from './welcome/welcome.component';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,
@@ -21,6 +25,9 @@ import { HttpClientModule } from '@angular/common/http';
     MatCardModule,
     MatButtonModule,
     HttpClientModule,
+
+    GenericStoreModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

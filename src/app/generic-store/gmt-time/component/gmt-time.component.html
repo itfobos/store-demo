@@ -1,0 +1,16 @@
+<mat-card class="the-card" *ngIf="dataState != 'Loading' && dataState != 'NotRequested'">
+  <mat-card-header>
+    <mat-card-title>GMT date and time</mat-card-title>
+  </mat-card-header>
+
+  <mat-card-content>
+    <div class="date-time-value" *ngIf="dataState == 'Received'">
+      {{dateTimeStr}}
+    </div>
+
+    <ng-container *ngIf="dataState == 'NotFound'"> No data received</ng-container>
+    <ng-container *ngIf="dataState == 'Error'"> Error has happened</ng-container>
+  </mat-card-content>
+</mat-card>
+
+<mat-spinner *ngIf="dataState == 'Loading'"></mat-spinner>
