@@ -7,10 +7,11 @@
     <div class="date-time-value" *ngIf="dataState == 'Received'">
       {{dateTimeStr}}
     </div>
-
-    <ng-container *ngIf="dataState == 'NotFound'"> No data received</ng-container>
-    <ng-container *ngIf="dataState == 'Error'"> Error has happened</ng-container>
+    <ng-container *ngIf="dataState == 'NotFound'">No data received</ng-container>
+    <ng-container *ngIf="dataState == 'Error'">Error has happened</ng-container>
   </mat-card-content>
 </mat-card>
+
+<ng-container *ngIf="dataState == 'NotRequested'">Data has not been requested</ng-container>
 
 <mat-spinner *ngIf="dataState == 'Loading'"></mat-spinner>

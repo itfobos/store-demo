@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { GmtTimeComponent } from './generic-store/gmt-time/component/gmt-time.component';
+import { NgxsGmtTimeComponent } from './ngxs-store/component/ngxs-gmt-time.component';
 
 const routes: Routes = [
   {
@@ -11,6 +12,10 @@ const routes: Routes = [
   {
     path: 'generic-store',
     component: GmtTimeComponent,
+  },
+  {
+    path: 'ngxs-store',
+    component: NgxsGmtTimeComponent,
   },
   {
     path: '',

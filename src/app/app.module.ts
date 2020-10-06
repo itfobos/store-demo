@@ -11,6 +11,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { GenericStoreModule } from './generic-store/generic-store.module';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { MatIconModule } from '@angular/material/icon';
+import { NgxsAppStoreModule } from './ngxs-store/ngxs-app-store.module';
 
 @NgModule({
   declarations: [
@@ -19,15 +20,17 @@ import { MatIconModule } from '@angular/material/icon';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     BrowserAnimationsModule,
+    AppRoutingModule,
+    HttpClientModule,
+
     MatToolbarModule,
     MatCardModule,
     MatButtonModule,
-    HttpClientModule,
+    MatIconModule,
 
     GenericStoreModule,
-    MatIconModule,
+    NgxsAppStoreModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

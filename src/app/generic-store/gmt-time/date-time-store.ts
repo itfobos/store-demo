@@ -1,5 +1,5 @@
 import { SimpleGenericStore } from '../generic-store/simple-generic-store';
-import { DateTime, GmtDateTimeService } from '../../service/gmt-date-time.service';
+import { DateTime, GmtDateTimeService } from '../../common/service/gmt-date-time.service';
 import { Injectable } from '@angular/core';
 
 @Injectable()
