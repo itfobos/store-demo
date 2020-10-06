@@ -1,6 +1,6 @@
 import { SimpleGenericStore } from './simple-generic-store';
 import { of, Subject, throwError } from 'rxjs';
-import { DataState } from './data-state.enum';
+import { DataState } from '../../common/data-state.enum';
 
 describe('SimpleGenericStore', () => {
 

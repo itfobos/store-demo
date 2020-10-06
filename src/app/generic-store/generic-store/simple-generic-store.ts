@@ -1,6 +1,6 @@
 import { BehaviorSubject, Observable, Subscription } from 'rxjs';
 import { Function, isNotNullOrUndefined, Optional, Producer } from '@eastbanctech/ts-optional';
-import { DataState } from './data-state.enum';
+import { DataState } from '../../common/data-state.enum';
 
 export interface GenericStore<T> {
   readonly data: Optional<T>;

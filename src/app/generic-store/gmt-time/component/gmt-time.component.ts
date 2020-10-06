@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { DateTimeStore } from '../date-time-store';
-import { DataState } from '../../generic-store/data-state.enum';
+import { DataState } from '../../../common/data-state.enum';
 
 @Component({
   selector: 'app-gmt-time',
